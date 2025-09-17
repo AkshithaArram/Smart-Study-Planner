@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Smart Study Planner</h1>
+
+  <!-- Task Input Section -->
+  <div class="task-input">
+    <input type="text" id="taskTitle" placeholder="Enter your study task">
+    <select id="taskPriority">
+      <option value="High">High Priority</option>
+      <option value="Medium" selected>Medium Priority</option>
+      <option value="Low">Low Priority</option>
+    </select>
+    <input type="time" id="taskReminder" placeholder="Set Reminder">
+    <button id="addTaskBtn">Add Task</button>
+  </div>
+
+  <!-- Progress Section -->
+  <div id="progressSection">
+    <h2>Progress</h2>
+    <div id="progressBarOuter">
+      <div id="progressBarInner"></div>
+    </div>
+    <p id="progressText">0% completed</p>
+  </div>
+
+  <!-- Study Suggestions -->
+  <div id="suggestionSection">
+    <h2>Next Study Suggestion</h2>
+    <p id="suggestionText">No suggestions yet</p>
+    <button id="suggestBtn">Get Suggestion</button>
+  </div>
+
+  <!-- Streak Section -->
+  <div id="streakSection">
+    <h2>Your Study Streak</h2>
+    <p id="streakText">0 days</p>
+  </div>
+
+  <!-- Task List -->
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
